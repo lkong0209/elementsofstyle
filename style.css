@@ -1,0 +1,152 @@
+/* This is what commenting out looks like in CSS. A comment in CSS is started with a "/" + "*" and closed with "*" + "/". Same keyboard shortcut as HTML (the keyboard shortcut to comment out is the same for all code languages, even if the symbols look different). */
+
+/* Below I've commented out the @font-face rule to import the typeface "Monde." If you're using a font file you own on your computer, you can replace the font-family with the typeface name (remember to put it in between "" or '') and the src: url() with the location of your font file. */
+
+/* @font-face {
+    font-family: 'monde';
+    src: url(assets/monde-regular.otf);
+} */
+
+
+
+/* broad selectors */
+
+
+*{
+margin:0px;
+font-family: 'font-family: 'Roboto Condensed'
+
+}
+
+body {
+    background-color: gray;
+
+}
+
+/* generic element selector */
+h1 {
+    font-weight: 700;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;;
+    font-size: 100px;
+    margin-left: 50px;
+}
+/* generic element selector */
+p{
+    padding-top: 15px;
+    line-height: 28px;
+    font-size: 20px;
+}
+{h2}
+
+/* generic element selector */
+a {
+    
+}
+
+
+/* class */
+/* ".classname" */
+.fun{
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    line-height: 30px;
+}
+
+/* id */
+#morefun{
+    color: rgb(255, 255, 255);
+}
+
+.fun:hover{
+    color: azure;
+}
+#morefun:hover{
+    color: rgb(255, 255, 255);
+}
+
+
+/* some advanced properties  */
+.container{
+    columns: 3;
+    column-gap: 20px;
+    column-rule-style: solid;
+    font-size: 16px;
+    line-height: 120%;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px; 
+}
+
+    
+
+
+/* animation rules */
+/* 
+
+  @keyframes scale {
+    0%   {font-size: 16px}
+    50%  {font-size: 36px;}
+    100% {font-size: 16px}
+  }
+
+  @keyframes twirl {
+    0%   {transform: rotate(0deg)}
+    100% {transform: rotate(359deg)}
+  } */
+  
+  @keyframes color {
+    0%   {color: rgb(255, 255, 255);}
+    25%  {color: rgb(176, 176, 176);}
+    50%  {color: rgb(255, 0, 0);}
+    100% {color: rgb(0, 0, 0);}
+  }
+
+.color{
+    animation-name: color;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight:bold ;
+    cursor: pointer;
+}
+   
+
+
+.color:hover{
+    /* padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight:bold ; */
+    /* apply animation rules to class */
+    /* animation-name: color;
+    animation-duration: 5s;
+    animation-iteration-count: infinite; */
+}
+
+
+.twirl{
+    /* color: rgb(255, 0, 234);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight:bold ;
+    cursor: pointer; */
+    /* apply animation rules to class */
+    /* animation-name: twirl;
+    animation-duration: 5s;
+    animation-iteration-count: infinite; */
+}
+
+.scale{
+    /* color: rgb(0, 72, 255);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight:bold ;
+    cursor: pointer;
+    /* apply animation rules to class */
+    /* animation-name: scale;
+    animation-duration: 5s;
+    animation-iteration-count: infinite; */ 
+}
+
+
